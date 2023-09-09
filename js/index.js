@@ -1,27 +1,19 @@
-setInterval(getCurrentDate, 1000);
+const date = new Date();
+setInterval(getCurrentTime, 100);
 
 function getCurrentDate() {
-  const date = new Date();
-
-  const options = {
-    weekday: "short",
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  };
-  const currentDate = date.toLocaleDateString(undefined, options);
-
+  const currentDate = date.toLocaleDateString(undefined, {
+    weekday: `long`,
+  });
   const displayDate = document.getElementById("day");
   displayDate.textContent = currentDate;
+  console.log(displayDate);
 }
-
 function getCurrentTime() {
   const date = new Date();
-
-  const currentTime = date.toLocaleTimeString();
-
-  const displayTime = document.getElementById("time");
-  displayTime.textContent = currentTime;
+  const currentTime = date.getTime();
+  const displayDate = document.getElementById("time");
+  displayDate.textContent = currentTime;
+  console.log(displayDate);
 }
-
 getCurrentDate();
