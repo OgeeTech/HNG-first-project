@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <main class="card">
+      <article>
+        <section class="item1">
+          <div class="img-wrapper">
+            <img
+              data-testid="slackDisplayImage"
+              src="./img/Gift wada.png"
+              alt="G.O Wada"
+            />
+            <h4 data-testid="slackUserName" class="username">G.O Wada</h4>
+            <p class="date-time">
+              <span data-testid="currentDayOfTheWeek" id="day"></span>
+              <br /><br />
+              <span data-testid="currentUTCTime" id="time"></span>
+            </p>
+          </div>
+        </section>
+
+        <hr class="section-divider" />
+
+        <section>
+          <div>
+            <ul class="section-list">
+              <li>
+                <div>
+                  <h2>Track</h2>
+                  <p data-testid="myTrack">Frontend track</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h5>Github URL</h5>
+                  <p>
+                    <a
+                      class="btn"
+                      target="_same"
+                      href="https://github.com/OgeeTech/HNG-first-project.git"
+                      data-testid="githubURL"
+                      >click here</a
+                    >
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
